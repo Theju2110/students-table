@@ -10,7 +10,7 @@ This project was developed as part of a **Full Stack Assignment – Students Tab
 ## Live Demo
 
 Live Application:  
-https://students-table.vercel.app
+https://students-table-h94o.vercel.app/
 
 GitHub Repository:  
 https://github.com/Theju2110/students-table
