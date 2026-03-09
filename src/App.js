@@ -86,13 +86,16 @@ function App() {
   );
 
   return (
-    <div className="container">
+  <div className="container">
 
-      <h1>Student Management Dashboard</h1>
-
+    <div className="header">
+      <h1>Students Dashboard</h1>
       <p>Total Students: {students.length}</p>
+    </div>
 
-      {/* Search */}
+    {/* Search + Sort Controls */}
+    <div className="controls">
+
       <input
         type="text"
         placeholder="Search student..."
@@ -100,19 +103,24 @@ function App() {
         onChange={(e) => setSearch(e.target.value)}
       />
 
-      {/* Sort Button */}
       <button onClick={sortStudents}>
         Sort by Name
       </button>
 
-      {/* Form */}
+    </div>
+
+    {/* Student Form Card */}
+    <div className="card">
       <StudentForm
         addStudent={addStudent}
         editingStudent={editingStudent}
         updateStudent={updateStudent}
       />
+    </div>
 
-      {/* Table */}
+    {/* Student Table Card */}
+    <div className="card">
+
       {loading ? (
         <p>Loading students...</p>
       ) : (
@@ -124,8 +132,8 @@ function App() {
       )}
 
     </div>
-   
-  );
-}
+
+  </div>
+);}
 
 export default App;

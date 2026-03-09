@@ -43,39 +43,41 @@ function StudentForm({ addStudent, editingStudent, updateStudent }) {
   };
 
   return (
-    <div className="form-card">
+  <div className="form-card">
 
-      <form onSubmit={handleSubmit}>
+    <h2>Add New Student</h2>
 
-        <input
-          name="name"
-          placeholder="Name"
-          value={student.name}
-          onChange={handleChange}
-        />
+    <form onSubmit={handleSubmit} className="form-row">
 
-        <input
-          name="email"
-          placeholder="Email"
-          value={student.email}
-          onChange={handleChange}
-        />
+      <input
+        name="name"
+        placeholder="Full Name"
+        value={student.name}
+        onChange={handleChange}
+      />
 
-        <input
-          name="age"
-          placeholder="Age"
-          value={student.age}
-          onChange={handleChange}
-        />
+      <input
+        name="email"
+        placeholder="Email Address"
+        value={student.email}
+        onChange={handleChange}
+      />
 
-        <button type="submit">
-          {editingStudent ? "Update Student" : "Add Student"}
-        </button>
+      <input
+        name="age"
+        placeholder="Age"
+        value={student.age}
+        onChange={handleChange}
+      />
 
-      </form>
+      <button type="submit" className="create-btn">
+        {editingStudent ? "Update Student" : "Create Record"}
+      </button>
 
-    </div>
-  );
+    </form>
+
+  </div>
+);
 }
 
 export default StudentForm;

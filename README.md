@@ -25,7 +25,7 @@ https://github.com/Theju2110/students-table
 - Delete students with confirmation dialog
 - Search students by name
 - Sort students by name
-- Download student data as an Excel file
+- Export student data as an Excel file
 - Data persistence using localStorage
 - Responsive and clean UI
 
@@ -39,6 +39,7 @@ https://github.com/Theju2110/students-table
 - CSS3
 - XLSX (Excel export)
 - FileSaver
+-LocalStorage
 
 ---
 
